@@ -5,6 +5,7 @@
     <title>Plants</title>
     <link rel="icon" href="Favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider-style.css">
     <style>
      body{
      background-image: url(background.jpg);
@@ -33,8 +34,8 @@
         <br> про домашние растения!
     </div>
 </div>
-<div class="second">
-    <div class="info_left">
+<div class="second_show">
+    <div class="info_left_show">
         <p class="link">
             <a href="main_page.html">Главная страница</a>
         </p>
@@ -52,29 +53,29 @@
         </p>
     </div>
 
-    <div class="info_right">
-        <p class="right_text_main">Вот несколько растений, которые могут Вас заинтересовать!<br>
-        Остальные смотрите по ссылке слева.</p>
-        <div class="photo">
-            <p><img src="Fuchsia.jpg" alt="" /></p>
-            <a class="caption, link" href="Fuxia.html">Фуксия</a>
-        </div>
-        <div class="photo">
-            <p><img src="Strelitzia.jpg" alt="" /></p>
-            <a class="caption, link" href="Strelitzia.html">Стрелиция</a>
-        </div>
-        <div class="photo">
-            <p><img src="Agapanthus.jpg" alt="" /></p>
-            <a class="caption, link" href="Agapanthus.html">Агапантус</a>
-        </div>
-        <div class="photo">
-            <p><img src="Hibiscus.jpg" alt="" /></p>
-            <a class="caption, link" href="Hibiscus.html">Гибискус</a>
+    <div class="info_right_show">
+        <div class="sim-slider">
+            <ul class="sim-slider-list">
+                <li><img src="faceless.gif" alt="screen"></li> <!-- это экран -->
+                <li class="sim-slider-element"><a href="Hibiscus.html"><img src="Гибискус_3.jpg" alt="0"></a></li>
+                <li class="sim-slider-element"><img src="Агапантус_3.jpg" alt="1"></li>
+                <li class="sim-slider-element"><img src="Бегония_3.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="Гортензия_3.jpg" alt="3"></li>
+                <li class="sim-slider-element"><img src="Олеандр_3.png" alt="4"></li>
+                <li class="sim-slider-element"><img src="Примула_3.jpg" alt="5"></li>
+                <li class="sim-slider-element"><img src="Стрелиция_3.jpg" alt="6"></li>
+                <li class="sim-slider-element"><img src="Фуксия_3.png" alt="7"></li>
+                <li class="sim-slider-element"><img src="Цикламен_3.jpg" alt="8"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-dots"></div>
         </div>
 
     </div>
+    <script src="script.js"></script>
+    <!-- вызов слайдера -->
+    <script>new Sim()</script>
 </div>
 </body>
 </html>
-
-
